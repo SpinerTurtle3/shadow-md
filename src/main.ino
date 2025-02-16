@@ -41,7 +41,15 @@
 //         Some place a 10K ohm resistor between S1 & GND on the SyRen 10 itself
 //
 // =======================================================================================
-//
+
+// ---------------------------------------------------------------------------------------
+//                          Libraries
+// ---------------------------------------------------------------------------------------
+#include <Arduino.h>
+#include <PS3BT.h>
+#include <usbhub.h>
+#include <Sabertooth.h>
+
 // ---------------------------------------------------------------------------------------
 //                        General User Settings
 // ---------------------------------------------------------------------------------------
@@ -1688,19 +1696,6 @@ int marcDuinoBaudRate = 9600; // Set the baud rate for the Syren motor controlle
 #define SABERTOOTH_ADDR 128 // Serial Address for Foot Sabertooth
 
 #define ENABLE_UHS_DEBUGGING 1
-
-// ---------------------------------------------------------------------------------------
-//                          Libraries
-// ---------------------------------------------------------------------------------------
-#include <PS3BT.h>
-#include <usbhub.h>
-
-// Satisfy IDE, which only needs to see the include statment in the ino.
-#ifdef dobogusinclude
-#include <spi4teensy3.h>
-#endif
-
-#include <Sabertooth.h>
 
 // ---------------------------------------------------------------------------------------
 //                    Panel Management Variables
