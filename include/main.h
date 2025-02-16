@@ -140,19 +140,19 @@ extern int footDriveSpeed;
 // Function declarations
 void setup();
 void loop();
-boolean ps3FootMotorDrive(PS3BT* myPS3 = PS3NavFoot);
+boolean ps3FootMotorDrive(PS3BT *myPS3 = PS3NavFoot);
 void footMotorDrive();
-int ps3DomeDrive(PS3BT* myPS3 = PS3NavDome);
+int ps3DomeDrive(PS3BT *myPS3 = PS3NavDome);
 void rotateDome(int domeRotationSpeed, String mesg);
 void domeDrive();
-void ps3ToggleSettings(PS3BT* myPS3 = PS3NavFoot);
+void ps3ToggleSettings(PS3BT *myPS3 = PS3NavFoot);
 void toggleSettings();
-void marcDuinoButtonPush(int type, int MD_func, int MP3_num, int LD_type, String LD_text, int panel_type, 
-                         boolean use_DP1, int DP1_str_delay, int DP1_open_time, boolean use_DP2, int DP2_str_delay, 
-                         int DP2_open_time, boolean use_DP3, int DP3_str_delay, int DP3_open_time, boolean use_DP4, 
-                         int DP4_str_delay, int DP4_open_time, boolean use_DP5, int DP5_str_delay, int DP5_open_time, 
-                         boolean use_DP6, int DP6_str_delay, int DP6_open_time, boolean use_DP7, int DP7_str_delay, 
-                         int DP7_open_time, boolean use_DP8, int DP8_str_delay, int DP8_open_time, boolean use_DP9, 
+void marcDuinoButtonPush(int type, int MD_func, int MP3_num, int LD_type, String LD_text, int panel_type,
+                         boolean use_DP1, int DP1_str_delay, int DP1_open_time, boolean use_DP2, int DP2_str_delay,
+                         int DP2_open_time, boolean use_DP3, int DP3_str_delay, int DP3_open_time, boolean use_DP4,
+                         int DP4_str_delay, int DP4_open_time, boolean use_DP5, int DP5_str_delay, int DP5_open_time,
+                         boolean use_DP6, int DP6_str_delay, int DP6_open_time, boolean use_DP7, int DP7_str_delay,
+                         int DP7_open_time, boolean use_DP8, int DP8_str_delay, int DP8_open_time, boolean use_DP9,
                          int DP9_str_delay, int DP9_open_time, boolean use_DP10, int DP10_str_delay, int DP10_open_time);
 void marcDuinoFoot();
 void marcDuinoDome();
